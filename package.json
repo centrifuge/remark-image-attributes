@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "babel src --out-dir dist --ignore src/**/*.spec.js",
+    "postinstall": "yarn build",
     "example": "node ./example/example.js",
     "test": "jest src/"
   },

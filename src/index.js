@@ -18,6 +18,8 @@ const imageAttributesTokenizer = (eat, value) => {
 
   if (!parsedImageAttributes) return;
 
+  console.log("  | eating", parsedImageAttributes);
+
   return eat(imageWithAttributes)({
     type: "image",
     ...parsedImageAttributes,
